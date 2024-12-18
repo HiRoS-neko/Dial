@@ -41,10 +41,10 @@ struct DialApp: App {
                 button.subviews.count == 0
             else { return }
             
-            menuBarItem.length = 40
+            menuBarItem.length = 20
             
             let view = NSHostingView(rootView: MenuBarIconView())
-            view.frame.size = .init(width: 40, height: NSStatusBar.system.thickness)
+            view.frame.size = .init(width: 20, height: NSStatusBar.system.thickness)
             button.addSubview(view)
         }
     }
